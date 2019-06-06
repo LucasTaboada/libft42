@@ -6,7 +6,7 @@
 /*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/15 08:27:24 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/06/05 09:02:31 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/05 22:21:28 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t		i;
 	size_t		len;
-	int			k;
+	size_t		k;
 
 	i = 0;
 	k = size;
