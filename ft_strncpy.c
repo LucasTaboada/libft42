@@ -6,11 +6,11 @@
 /*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 08:04:02 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/05/31 15:54:42 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/05 22:56:44 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char		*ft_strncpy(char *dest, const char *src, size_t n)
 {
