@@ -6,7 +6,7 @@
 /*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/16 19:59:12 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/05/27 08:49:34 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/05 22:02:34 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void		ft_putstr_fd(char const *s, int fd)
 	int		i;
 
 	i = 0;
+	if (!(s) || !(fd))
+		return ;
 	while (s[i] != '\0')
 	{
 		ft_putchar_fd(s[i], fd);
