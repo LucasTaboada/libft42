@@ -6,7 +6,7 @@
 /*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/16 19:41:56 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/05/29 22:06:49 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/05 21:01:53 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,10 @@ char		*ft_strnew(size_t size)
 {
 	char	*str;
 
-	str = (char *)malloc(size);
-	if (!str)
-	{
+	if (!(str = (char *)malloc(sizeof(char) * size + 1)))
 		return (NULL);
-	}
-	ft_memset(str, (int)'\0', size + 1);
+	str[size] = '\0';
+	while (size--)
+		str[size] = '\0';
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 21:17:04 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/05/31 21:31:41 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/05 20:34:46 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void		*ft_memcpy(void *s1, const void *s2, size_t n)
 	unsigned char			*ptr1;
 	unsigned char			*ptr2;
 
+	if (n == 0 || s1 == s2)
+		return (s1);
 	i = 0;
 	ptr1 = (unsigned char *)s1;
 	ptr2 = (unsigned char *)s2;

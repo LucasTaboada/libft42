@@ -6,7 +6,7 @@
 /*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 09:44:34 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/06/04 16:20:39 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/05 20:38:09 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,6 @@ char		*ft_strcpy(char *dest, char *src)
 {
 	int		i;
 
-	if (!dest || !src)
-	{
-		return (NULL);
-	}
 	i = -1;
 	while (src[++i] != '\0')
 	{

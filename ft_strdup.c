@@ -6,7 +6,7 @@
 /*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 18:52:59 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/05/31 15:54:11 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/05 20:50:03 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char		*ft_strdup(char *s)
 
 	i = 0;
 	count = ft_strlen(s);
-	str = (char*)malloc(sizeof(char) * (count + 1));
+	if (!(str = (char*)malloc(sizeof(char) * (count + 1))))
+		return (NULL);
 	while (s[i] != '\0')
 	{
 		str[i] = s[i];
