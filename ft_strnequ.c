@@ -6,7 +6,7 @@
 /*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/16 19:50:04 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/06/04 18:46:14 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/05 21:39:44 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,5 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 		}
 		return (1);
 	}
-	return (1);
+	return (0);
 }
