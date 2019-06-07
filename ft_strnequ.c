@@ -6,7 +6,7 @@
 /*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/16 19:50:04 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/06/07 09:29:17 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/07 09:45:38 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 		return (0);
 	if (n == 0)
 		return (1);
-	while (*s1  && *s2 && *s1 == *s2  && --n)
+	while (*s1 && *s2 && *s1 == *s2 && --n)
 	{
 		++s1;
 		++s2;
 	}
-		return (*s1 == *s2 ? 1 : 0);
+	return (*s1 == *s2 ? 1 : 0);
 }
