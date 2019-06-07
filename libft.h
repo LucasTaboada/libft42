@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltaboada <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ltaboada <ltaboada@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 08:30:26 by ltaboada          #+#    #+#             */
-/*   Updated: 2019/06/05 22:20:02 by ltaboada         ###   ########.fr       */
+/*   Updated: 2019/06/06 17:01:08 by ltaboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ int					ft_isalpha(int arg);
 int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
-int					isprint(int c);
 void				*ft_memalloc(size_t size);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putendl(char const *s);
@@ -76,6 +75,8 @@ int					ft_strncmp(const char *str1, const char *str2, size_t num);
 int					ft_countwords(char const *s, char c);
 int					ft_word_len(char const *str, char c);
 int					ft_num_len(int nbr);
+int					ft_islower(char c);
+int					ft_isupper(char c);
 
 typedef struct		s_list
 {
